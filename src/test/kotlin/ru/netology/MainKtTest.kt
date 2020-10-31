@@ -192,6 +192,6 @@ class MainKtTest {
 
         val result = checkLimitsThenOutput(currentMonthAmount, cardOrAccountType, transferAmount)
 
-        assertEquals(0, result)
+        assertEquals("Извините, но вы не укладываетесь в лимиты :(", result)
     }
 }
